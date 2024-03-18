@@ -10,7 +10,7 @@ sorry for low quality, i made this during math and i'm still learning Rust. enjo
 */
 
 // main function
-fn solve_meth() {
+fn solve_math() {
     let mut number1 = String::new();
     let mut number2 = String::new();
     let mut operation = String::new();
@@ -32,19 +32,19 @@ fn solve_meth() {
     // calculation and if statement
     if operation == "+" {
       println!("{}", number1_int + number2_int);
-      solve_meth();
+      solve_math();
     }
     else if operation == "-" {
       println!("{}", number1_int - number2_int);
-      solve_meth(); // calling the function again to re-use calculator
+      solve_math(); // calling the function again to re-use calculator
     }
     else if operation == "*" {
       println!("{}", number1_int * number2_int);
-      solve_meth(); // multiplication
+      solve_math(); // multiplication
     }
      else if operation == "/" {
        println!("{}", number1_int / number2_int);
-       solve_meth();
+       solve_math();
      }
      else if operation == "q" {
        println!("Goodbye!");
@@ -52,7 +52,7 @@ fn solve_meth() {
      } 
      else {
        println!("Try again.");
-       solve_meth();
+       solve_math();
      } // this path is for people who dont understand the assignment
     
 }
